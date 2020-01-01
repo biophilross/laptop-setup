@@ -1,10 +1,16 @@
-# Laptop setup
+# Macbook laptop setup #
 
 Instructions for setting up new or factory reset laptops
+
+### Table of contents ###
+* [Basic setup](#basic-setup)
+* [Academic writing](#academic-writing)
 
 ---
 
 This assumes that you are using a Macbook running maxOS.
+
+## Basic setup ##
 
 ## Install XCode
 
@@ -38,7 +44,7 @@ Dotfiles:
 	cd $HOME/.dotfiles
 	bash setup.sh osx
 
-Settings:
+Terminal Settings:
 
 Profile: Basic
 Cursor: Red, Blink cursor
@@ -50,9 +56,9 @@ Advanced: Uncheck paste newlines as carriage returns, audible bell, only whens s
 
 See dotfiles github repo `start_brewing.sh` for more details
 
-Setting up miniconda
+Setting up miniconda3
 
-	wget https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+	wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 	bash Miniconda3-latest-MacOSX-x86_64.sh -b -p $HOME/.miniconda3
 
 	conda config --add channels conda-forge
@@ -108,3 +114,8 @@ http://www.tug.org/mactex/mactex-download.html
 	eval "$(docker-machine env default)"
 	docker run hello-world
 	docker-machine stop default
+
+
+## Academic writing ##
+
+For academic writing I currently use a combination of Scrivener, BibDesk, and Pandoc. This let's me separate each section into separate documents before compiling it back into one with great ease and flexibility, add citations by copy and paste as I write, and use pre-designed templates to format everything nicely once everything is written.
